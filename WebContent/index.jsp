@@ -1,90 +1,229 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+	pageEncoding="EUC-KR"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Soyeon's Portfolio</title>
-    <meta name="description" content=" Protfolio for Soyeon" />
-    <meta name="author" contnet="Soyeon" />
-    <!-- fontawesome에서 제공하는 파일 사용가능 -->
-    <script src="https://kit.fontawesome.com/45ea1d6a4c.js" crossorigin="anonymous"></script>  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>Soyeon's Portfolio</title>
+<meta name="description" content=" Protfolio for Soyeon" />
+<meta name="author" contnet="Soyeon" />
+<!-- fontawesome에서 제공하는 파일 사용가능 -->
+<script src="https://kit.fontawesome.com/45ea1d6a4c.js"
+	crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+	rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
-    <!-- defer:HTML이 다 파싱된 다음에 자바스크립트 파일이 실행된다  -->
+<link rel="stylesheet" href="style.css" />
+<script src="main.js" defer></script>
+<!-- defer:HTML이 다 파싱된 다음에 자바스크립트 파일이 실행된다  -->
 </head>
 <body>
-    <!-- Navbar :현재 웹사이트에서 주요 지점으로 이동할 수 있는 네비게이션 역할-->
-    <nav id="navbar">
-        <div class="navbar_logo">
-            <a href="#">SoYeon</a>
+	<!-- Navbar :현재 웹사이트에서 주요 지점으로 이동할 수 있는 네비게이션 역할-->
+	<nav id="navbar">
+	<div class="navbar_logo">
+		<a href="#">SoYeon</a>
 
-        </div>
-        <div class="navbar_menu">
-            <ul class="navbar_menu">
-                <li class="navbar_menu_item">HOME</li>
-                <li class="navbar_menu_item">ABOUT</li> 
-                <li class="navbar_menu_item">SKILLS</li>
-                <li class="navbar_menu_item">MY WORK</li>
-                <li class="navbar_menu_item">TESTIMONIAL</li>
-                <li class="navbar_menu_item">CONTACT</li>
-            </ul>
+	</div>
+	<div class="navbar_menu">
+		<ul class="navbar_menu">
+			<li class="navbar_menu_item">HOME</li>
+			<li class="navbar_menu_item">ABOUT</li>
+			<li class="navbar_menu_item">SKILLS</li>
+			<li class="navbar_menu_item">MY WORK</li>
+			<li class="navbar_menu_item">TESTIMONIAL</li>
+			<li class="navbar_menu_item">CONTACT</li>
+		</ul>
 
 
 
-        </div>
-    </nav> 
-    <!-- HOME  -->
-    <section id="home">
-    	<img src="/myPage/img/2.jpg" alt="hello" class="home_avatar" height="50px"/>
-    	<h1 class="home_title">Hello,<br> I'm SoYeon</h1>
-    	<h2 class="home_description">let me introduce myself</h2>
-    	<button class="home_button">Contact Me</button>
-    </section>
-    
-    <!-- About -->
-    <section id="about">
-    	<h1>About me</h1>
-    	<p>Discussion blahblah</p>
-    <div class="about_major">
-    	<div class="major">
-    		<div class="major_icon">
-    			<i class="fab fa-java"></i>
-    		</div>
-    		<div class="majot_title">JAVA</div>
-    		<div class="major_discription"> Exlpain Java </div>
-    	</div>
-    	 <div class="major">
-    		<div class="major_icon">
-    			<i class="fab fa-html5"></i>
-    		</div>
-    		<div class="majot_title">HTML</div>
-    		<div class="major_discription"> Exlpain HTML </div><br>
-    	</div>
-    	<div class="about_school">
-    		<img class="school_logo" alt="tempImg" src="/myPage/img/1.gif" height="40px">
-    		<p class="school_name"> Inha Univ</p>
-    		<p class="school_period"> 2015.03~2020.08</p>
-    	</div>
-    	<div class="about_academy">
-    		<img class="academy_logo" alt="tempImg" src="/myPage/img/1.gif" height="40px">
-    		<p class="academy_name"> Sist</p>
-    		<p class="academy_period"> 2021.05.28~2021.11.09</p>
-    	</div>
-    </div>
-    
-    </section>
-    <!--Skills  -->
-    <section id="skills"></section>
-    <!-- Work -->
-    <section id="work"></section>
-    <!-- Testimonials -->
-    <section id="testimonials"></section>
-    <!-- Contact -->
-    <section id="content"></section>
+	</div>
+	</nav>
+	<!-- HOME  -->
+	<section id="home"> <img src="/myPage/img/2.jpg" alt="hello"
+		class="home_avatar" height="50px" />
+	<h1 class="home_title">
+		Hello,<br> I'm SoYeon
+	</h1>
+	<h2 class="home_description">let me introduce myself</h2>
+	<button class="home_button">Contact Me</button>
+	</section>
+
+	<!-- About -->
+	<section id="about">
+	<h1>About me</h1>
+	<p>Discussion blahblah</p>
+	<div class="about_major">
+		<div class="major">
+			<div class="major_icon">
+				<i class="fab fa-java"></i>
+			</div>
+			<div class="majot_title">JAVA</div>
+			<div class="major_discription">Exlpain Java</div>
+		</div>
+		<div class="major">
+			<div class="major_icon">
+				<i class="fab fa-html5"></i>
+			</div>
+			<div class="majot_title">HTML</div>
+			<div class="major_discription">Exlpain HTML</div>
+			<br>
+		</div>
+		<div class="about_school">
+			<img class="school_logo" alt="tempImg" src="/myPage/img/1.gif"
+				height="40px">
+			<p class="school_name">Inha Univ</p>
+			<p class="school_period">2015.03~2020.08</p>
+		</div>
+		<div class="about_academy">
+			<img class="academy_logo" alt="tempImg" src="/myPage/img/1.gif"
+				height="40px">
+			<p class="academy_name">Sist</p>
+			<p class="academy_period">2021.05.28~2021.11.09</p>
+		</div>
+	</div>
+
+	</section>
+
+	<!--Skills  -->
+	<section id="skills">
+	<h1>Skills</h1>
+	<h2>Skills&Attributes</h2>
+	<p>distcription about my skills</p>
+	<div class="skillset">
+		<div class="skillset_left">
+			<!-- 왼쪽박스 -->
+			<h3 class="skillset_title">Skills</h3>
+			<div class="skill">
+				<div class="skill_description">
+					<span>JAVA</span> <span>80%</span>
+				</div>
+				<div class="skill_bar">
+					<!--progress바를 만듦  -->
+					<div clss="skill_value"></div>
+				</div>
+				<div class="skill_description">
+					<span>HTML</span> <span>70%</span>
+				</div>
+				<div class="skill_bar">
+					<!--progress바를 만듦  -->
+					<div clss="skill_value"></div>
+				</div>
+				<div class="skill_description">
+					<span>JAVASCRIPT</span> <span>70%</span>
+				</div>
+				<div class="skill_bar">
+					<!--progress바를 만듦  -->
+					<div clss="skill_value"></div>
+				</div>
+				<div class="skill_description">
+					<span>SQL</span> <span>85%</span>
+				</div>
+				<div class="skill_bar">
+					<!--progress바를 만듦  -->
+					<div clss="skill_value"></div>
+				</div>
+			</div>
+		</div>
+		<div class="skillset_right">
+			<!--오른쪽박스  -->
+			<div class="tools">
+				<h3 class="tools_title">Tools</h3>
+				<ul class="tools_list">
+					<li><span>Eclipse</span></li>
+					<li><span>Oracle sqldeveloper</span></li>
+					<li><span>기타등등</span></li>
+				</ul>
+			</div>
+			<div class="etc">
+				<h3 class="etc_title">Etc</h3>
+				<ul class="etc_list">
+					<li><span>Git</span></li>
+					<li><span>정보처리기사</span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	</section>
+
+	<!-- Work -->
+	<section id="work">
+	<h1>My Work</h1>
+	<h3>Projects</h3>
+	<div class="work_categories">
+		<!-- 버튼 -->
+		<button class="category_btn">
+			All<span class="category_count">8</span>
+		</button>
+		<button class="category_btn">
+			Front-end<span class="category_count">4</span>
+		</button>
+		<button class="category_btn">
+			Back-end<span class="category_count">3</span>
+		</button>
+		<button class="category_btn">
+			Mobile<span class="category_count">1</span>
+		</button>
+	</div>
+
+	<div class="work_projects">
+		<!--target="blick": 현재창에서 주소가 열리지 않게 설정  -->
+		<a class="project" href="https://github.com/syjoo1515" target="blick">
+			<img class="project_img" alt="temp" src="/myPage/img/4.jpg"
+			height="50px" />
+			<h3>GitHub_site</h3> <span>My first project</span>
+		</a> <a class="project" href="https://github.com/syjoo1515" target="blick">
+			<img class="project_img" alt="temp" src="/myPage/img/4.jpg"
+			height="50px" />
+			<h3>GitHub_site</h3> <span>My second project</span>
+		</a> <a class="project"
+			href="https://linen-ixora-1c1.notion.site/2c380879d0214975b81471b4a465f7ce?v=d2cfef58de694ed9b2b2dc545e144db5"
+			target="blick"> <img class="project_img" alt="temp"
+			src="/myPage/img/4.jpg" height="50px" />
+			<h3>Notion site</h3> <span>My study</span>
+		</a>
+	</div>
+
+	</section>
+
+	<!-- Testimonials -->
+	<section id="testimonials">
+	<h1>Testimonials</h1>
+	<h3>see what they say about me</h3>
+	<div class="testimonials">
+		<img class="testimonials_avatar" alt="" src="/myPage/img/7.gif" height="40px" />
+		<div class="testimonials_avatar">
+			<p>write what people said about me blahblah</p>
+			<p class="name"><a href="https://github.com/syjoo1515" target="blick">name</a>/ inha univ</p>
+		</div>
+	</div>
+	<div class="testimonials">
+		<div class="testimonials_avatar">
+			<p>write what people said about me blahblah</p>
+			<p class="name"><a href="https://github.com/syjoo1515" target="blick">name</a>/ inha univ</p>
+		</div>
+		<img class="testimonials_avatar" alt="" src="/myPage/img/7.gif" height="40px" />
+	</div>
+
+	</section>
+
+	<!-- Contact -->
+	<section id="content">
+		<h1 class="contact_title">Let's talk</h1>
+		<h2 class="contact_email">syjoo15@naver.com</h2>
+		<div class="contact_links">
+			<a href="https://github.com/syjoo1515" target="_blank">
+				<i class="fab fa-github-square"></i>
+			</a>
+			<a href="#" target="_blank">
+				<i class="fas fa-paper-plane"></i>
+			</a>		
+		</div>
+		<p class="contact_right">2021 soyeon joo- ALl right reserve</p>
+	
+	</section>
 </body>
 </html>
