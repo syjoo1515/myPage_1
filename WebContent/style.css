@@ -40,11 +40,8 @@
 }
 body{
 	margin:0px;
-<<<<<<< HEAD
 	font-family: 'Noto Sans KR', sans-serif;
-=======
 	font-family: 'Do Hyeon', sans-serif;
->>>>>>> master
 	cursor: default; /*글자에 커서를 올려도 커서 모양 유지됨  */
 }
 a{
@@ -57,7 +54,6 @@ ul{
 	color: var(--color-white);
 	padding:0;
 }
-<<<<<<< HEAD
 span{
 	color: var(--color-white);
 	margin:0;
@@ -70,8 +66,7 @@ button{
 	border:none;
 	outline:none;
 }
-=======
->>>>>>> master
+
 
 
 
@@ -104,10 +99,7 @@ p {
   margin: 4px 0;
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> master
 /* navbar */
 #navbar{
 	display: flex;
@@ -139,7 +131,6 @@ p {
 	background-color: var(--color-dark-pink);
 }
 
-<<<<<<< HEAD
 /* HOME */
 #home{
 	background: no-repeat url('/myPage/img/homebackground-200515-154505.png');
@@ -229,5 +220,4 @@ p {
 	height:4px;
 	background-color: var(--color-orange);
 }
-=======
->>>>>>> master
+
