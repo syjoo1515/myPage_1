@@ -28,6 +28,7 @@
   --weight-regular: 400;
   	
 	/*size  */
+	--size-border-radius:4px;
 	
 }
 
@@ -37,6 +38,36 @@
 	box-sizing: border-box;
 	
 }
+body{
+	margin:0px;
+	font-family: 'Noto Sans KR', sans-serif;
+	cursor: default; /*글자에 커서를 올려도 커서 모양 유지됨  */
+}
+a{
+	text-decoration: none;
+	color: var(--color-white);
+}
+ul{
+	list-style: none;
+	margin:0;
+	color: var(--color-white);
+	padding:0;
+}
+span{
+	color: var(--color-white);
+	margin:0;
+	padding:0;
+}
+
+button{
+	background-color: transparent;
+	cursor: pointer;
+	border:none;
+	outline:none;
+}
+
+
+
 /*Typography  */
 h1 {
   font-size: var(--font-large);
@@ -64,4 +95,126 @@ p {
   font-weight: var(--weight-regular);
   color: var(--color-black);
   margin: 4px 0;
+}
+
+
+/* navbar */
+#navbar{
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--color-pink);
+	align-items: center;
+	padding:16px;
+}
+.navbar_logo{
+	font-size: var(--font-medium);
+	font-weight: var(--weight-semi-bold);
+}
+.navbar_menu ul{
+	display: flex;
+/* 	flex-direction: row; 이거 안해도 flex로 바꾸기만 해도 한줄로 정렬됨...왜지*/
+}
+.navbar_menu_item{
+	padding: 8px 12px;
+	margin:0 4px;
+	cursor:pointer; /* 커서 올리면 선택하는 커서로 바뀌게 */
+	border-radius: var(--size-border-radius); /*모서리 둥글게  */
+}
+.navbar_menu_item.active{
+	border:1px solid white;
+	
+}
+
+.navbar_menu_item:hover{
+	background-color: var(--color-dark-pink);
+}
+
+/* HOME */
+#home{
+	background: no-repeat url('/myPage/img/homebackground-200515-154505.png');
+	background-size: cover;
+	padding: 40px;
+	text-align:center;
+}
+.home_avatar{
+	width:250px;
+	height:250px;
+	border-radius:125px;
+	border:2px solid var(--color-light-white);
+}
+.home_title, .home_description{
+	color:var(--color-white);
+}
+.home_button{
+	padding: 4px 8px;
+	margin:18px 0 0 0;
+	border: solid 2px var(--color-light-white);
+	border-radius:var(--size-border-radius);
+	color:white;
+	font-size: var(--font-regular);
+	font-weight: var(--weight-semi-bold);
+}
+/*About  */
+#about{
+	text-align:center;
+	padding: 40px;
+}
+.about_major{
+	margin: 40px 0 0 0;
+	display:flex;
+	justify-content: center;
+}
+.school_name, .academy_name{
+	color: var(--color-dark-grey);
+	font-weight: var(--weight-semi-bold);
+	
+}
+.about_school, .about_academy{
+	margin: 0 100px;
+}
+.school_logo, .academy_logo{
+	width:180px;
+	border-radius: 50px;
+}
+.school_logo{
+	margin: 8px 0 20px 0;
+}
+
+/*Skills  */
+
+#skills{
+	margin: 20px;
+	padding: 40px;
+	background-color: var(--color-yellow);
+	text-align: center;
+}
+.skillset{
+	display:flex;
+	justify-content:center;
+	margin: 0px;
+}
+.skillset_left{
+	width: 600px;
+	background-color: var(--color-dark-grey);
+}
+.tools{
+	width: 400px;
+	background-color: var(--color-grey);
+}
+.etc{
+	width:400px;
+	background-color: var(--color-light-grey);
+}
+.skillset_title, .tools_title, .etc_title{
+	margin:0;
+}
+.skill{ /*여기부터 다시  */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.skill_bar{
+	width:450px;
+	height:4px;
+	background-color: var(--color-orange);
 }

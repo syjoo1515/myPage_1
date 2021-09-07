@@ -10,11 +10,9 @@
 	crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-	href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
-	rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="/myPage/style.css"  type="text/css"/>
 <script src="main.js" defer></script>
 <!-- defer:HTML이 다 파싱된 다음에 자바스크립트 파일이 실행된다  -->
 </head>
@@ -22,12 +20,13 @@
 	<!-- Navbar :현재 웹사이트에서 주요 지점으로 이동할 수 있는 네비게이션 역할-->
 	<nav id="navbar">
 	<div class="navbar_logo">
+	<i class="far fa-smile" style="color:#FFFFFF"></i>
 		<a href="#">SoYeon</a>
 
 	</div>
 	<div class="navbar_menu">
 		<ul class="navbar_menu">
-			<li class="navbar_menu_item">HOME</li>
+			<li class="navbar_menu_item active">HOME</li>
 			<li class="navbar_menu_item">ABOUT</li>
 			<li class="navbar_menu_item">SKILLS</li>
 			<li class="navbar_menu_item">MY WORK</li>
@@ -35,16 +34,17 @@
 			<li class="navbar_menu_item">CONTACT</li>
 		</ul>
 
-
-
 	</div>
 	</nav>
+	
+	
 	<!-- HOME  -->
-	<section id="home"> <img src="/myPage/img/2.jpg" alt="hello"
-		class="home_avatar" height="50px" />
-	<h1 class="home_title">
-		Hello,<br> I'm SoYeon
-	</h1>
+	<section id="home"> 
+		<img src="/myPage/img/2.jpg" alt="hello"
+		class="home_avatar" />
+	<h3 class="home_title">
+		Hello,<br> I'm IU
+	</h3>
 	<h2 class="home_description">let me introduce myself</h2>
 	<button class="home_button">Contact Me</button>
 	</section>
@@ -54,31 +54,17 @@
 	<h1>About me</h1>
 	<p>Discussion blahblah</p>
 	<div class="about_major">
-		<div class="major">
-			<div class="major_icon">
-				<i class="fab fa-java"></i>
-			</div>
-			<div class="majot_title">JAVA</div>
-			<div class="major_discription">Exlpain Java</div>
-		</div>
-		<div class="major">
-			<div class="major_icon">
-				<i class="fab fa-html5"></i>
-			</div>
-			<div class="majot_title">HTML</div>
-			<div class="major_discription">Exlpain HTML</div>
-			<br>
-		</div>
 		<div class="about_school">
-			<img class="school_logo" alt="tempImg" src="/myPage/img/1.gif"
-				height="40px">
+			<img class="school_logo" alt="tempImg" src="/myPage/img/inha.jpg">
 			<p class="school_name">Inha Univ</p>
+			<p class="school_major">아태물류학부</p>
 			<p class="school_period">2015.03~2020.08</p>
 		</div>
 		<div class="about_academy">
-			<img class="academy_logo" alt="tempImg" src="/myPage/img/1.gif"
-				height="40px">
-			<p class="academy_name">Sist</p>
+			<img class="academy_logo" alt="tempImg" src="/myPage/img/sist.jpg">
+			<p class="academy_name">쌍용교육센터</p>
+			<p class="academy_class">Java & JavaScript library을 활용한</p>
+			<p class="academy_class">반응형 웹 개발자 양성과정</p>
 			<p class="academy_period">2021.05.28~2021.11.09</p>
 		</div>
 	</div>
@@ -91,8 +77,8 @@
 	<h2>Skills&Attributes</h2>
 	<p>distcription about my skills</p>
 	<div class="skillset">
-		<div class="skillset_left">
 			<!-- 왼쪽박스 -->
+		<div class="skillset_left">
 			<h3 class="skillset_title">Skills</h3>
 			<div class="skill">
 				<div class="skill_description">
@@ -100,33 +86,33 @@
 				</div>
 				<div class="skill_bar">
 					<!--progress바를 만듦  -->
-					<div clss="skill_value"></div>
+					<div class="skill_value"></div>
 				</div>
 				<div class="skill_description">
 					<span>HTML</span> <span>70%</span>
 				</div>
 				<div class="skill_bar">
 					<!--progress바를 만듦  -->
-					<div clss="skill_value"></div>
+					<div class="skill_value"></div>
 				</div>
 				<div class="skill_description">
 					<span>JAVASCRIPT</span> <span>70%</span>
 				</div>
 				<div class="skill_bar">
 					<!--progress바를 만듦  -->
-					<div clss="skill_value"></div>
+					<div class="skill_value"></div>
 				</div>
 				<div class="skill_description">
 					<span>SQL</span> <span>85%</span>
 				</div>
 				<div class="skill_bar">
 					<!--progress바를 만듦  -->
-					<div clss="skill_value"></div>
+					<div class="skill_value"></div>
 				</div>
 			</div>
 		</div>
-		<div class="skillset_right">
 			<!--오른쪽박스  -->
+		<div class="skillset_right">
 			<div class="tools">
 				<h3 class="tools_title">Tools</h3>
 				<ul class="tools_list">
